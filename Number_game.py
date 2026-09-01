@@ -64,7 +64,10 @@ def main():
         return
 
     if result["status"] == "won":
-        print(f"Correct! The number is {result['target']}. You guessed it in {result['attempts_used']} chances.")
+        print(
+            f"Correct! The number is {result['target']}. "
+            f"You guessed it in {result['attempts_used']} chances."
+        )
     else:
         print(f"You lost! The number was {result['target']}.")
 
