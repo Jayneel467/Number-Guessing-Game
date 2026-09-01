@@ -25,6 +25,8 @@ def test_play_number_game_wins_on_first_try():
         outputs.append(prompt)
         return "7"
 
-    result = number_game.play_number_game(1, 10, target_number=7, max_attempts=3, input_func=fake_input)
+    result = number_game.play_number_game(
+        1, 10, target_number=7, max_attempts=3, input_func=fake_input
+    )
     assert result["status"] == "won"
     assert result["attempts_used"] == 1

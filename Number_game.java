@@ -1,5 +1,3 @@
-package Number_Game;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
